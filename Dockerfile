@@ -16,4 +16,4 @@ EXPOSE 2113 1113 2112 1112
 
 VOLUME /var/lib/eventstore /var/log/eventstore
 
-ENTRYPOINT ["eventstored", "--log=/var/log/eventstore", "--db=/var/lib/eventstore"]
+ENTRYPOINT ["eventstored", "--log=/var/log/eventstore", "--db=/var/lib/eventstore", "--run-projections=all"]
